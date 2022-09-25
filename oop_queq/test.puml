@@ -1,0 +1,19 @@
+@startuml
+annotation java.lang.Override
+class java.util.ArrayList
+class java.util.List
+class java.util.Scanner
+class oop.AnswerQuEq
+class oop.Launch1
+class oop.Launch2
+class oop.ListSolverQuEq
+class oop.SolverQuEq
+interface oop.ISolverQuEq
+oop.AnswerQuEq ......> java.lang.Override
+oop.Launch1 .....> java.util.Scanner
+oop.ListSolverQuEq ...> java.lang.Override
+oop.ListSolverQuEq ....> java.util.ArrayList
+oop.ListSolverQuEq .....> java.util.List
+oop.SolverQuEq ...> java.lang.Override
+oop.SolverQuEq --|> oop.ISolverQuEq
+@enduml
